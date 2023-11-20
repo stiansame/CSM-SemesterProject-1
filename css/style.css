@@ -127,8 +127,12 @@ header {
 }
 
 .title{
+  font-family: "amatic sc", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: rgb(231, 29, 171);
   align-self: center;
   padding: 1rem;
+  filter: drop-shadow(0 0.5rem 0.5rem rgba(12, 100, 112, 0.726));
 }
 
 nav,
