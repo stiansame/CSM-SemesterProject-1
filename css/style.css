@@ -121,10 +121,12 @@ body {
 header {
   display: grid;
   grid-template-columns: auto minmax(200px,1fr);
+  gap: 1rem;
   width: 100%;
   position: sticky;
   top:0;
   z-index: 100;
+  padding: 1rem;
 }
 
 .title{
@@ -132,7 +134,6 @@ header {
   font-size: clamp(2rem, 4vw, 3.5rem);
   color: rgb(231, 29, 171);
   align-self: center;
-  padding: 1rem;
   filter: drop-shadow(0 0.5rem 0.5rem rgba(12, 100, 112, 0.726));
 }
 
@@ -214,10 +215,10 @@ nav li,
   transition: scale 0.4s ease-in-out;
 }
 
+
+
 .logo {
   height: 100%;
-  padding:1rem 1rem 1rem 2rem;
-  
   }
 
 .logo img {
