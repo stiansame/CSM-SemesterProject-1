@@ -19,7 +19,7 @@ html {
     background-size: cover;
     color: rgb(0, 0, 0);
     min-height: 100dvh;
-    overflow: hidden;
+
     font-family:'Roboto Condensed', sans-serif;
   }
 
@@ -33,11 +33,13 @@ html {
     filter:blur(80px);
     animation: down 40S infinite;
     z-index: -1;
+    border: black solid 1px;
+
   }
 
   #down {
     position: absolute;
-    right:0;
+    right:2%;
     height: 25dvh;
     width: 25dvh;
     border-radius: 50%;
@@ -45,69 +47,80 @@ html {
     filter:blur(80px);
     animation: up 30s infinite;
     z-index: -1;
+    border: black solid 1px;
+
   }
 
   #left {
     position: absolute;
-    top:25%;
+    /* top:25%; */
     height: 45dvh;
-    width: 45dvh;
+    width: 45dvw;
     border-radius: 50%;
     background-image: linear-gradient(80deg, rgba(5, 124, 172, 0.15), rgba(183, 253, 52, 0.15));
     filter:blur(80px);
     animation: left 30s infinite;
     z-index: -1;
+    border: black solid 1px;
+
   }
 
   #right {
     position: absolute;
-    bottom:20%;
+    /* bottom:5%; */
     height: 40dvh;
-    width: 40dvh;
+    width: 40dvw;
     border-radius: 50%;
     background-image: linear-gradient(80deg, rgba(26, 248, 18, 0.15), rgba(199, 10, 52, 0.15));
     filter:blur(80px);
     animation: right 40s .5s infinite;
     z-index: -1;
+    border: black solid 1px;
+
   }
 
-  @keyframes down {
+   @keyframes down {
     0%, 100% {
-        top:-10dvh;
+        top:0dvh;
     }
     70%{
-        top:70dvh;
+        top:60dvh;
     }
   }
 
 
 @keyframes up {
   0%, 100% {
-      bottom:10dvh;
+      bottom:10vh;
   }
   70%{
-      bottom:70dvh;
+      bottom:70vh;
   }
 }
 
 @keyframes left {
     0%, 100% {
-        left:-10dvw;
+        right:1vw;
+        top: 15vh;
     }
     70%{
-        left:130dvw;
+        right:45vw;
+        top: 50vh;
     }
   }
 
 
 @keyframes right {
   0%, 100% {
-      right:-10dvw;
+      right:1dvw;
+      bottom:5dvh;
   }
   70%{
-      Right:110dvw;
+      Right:45vw;
+      bottom:45vh;
   }
-}
+} 
+
 
 h1 {
   font-family: "Bebas Neue", sans-serif;
@@ -129,7 +142,6 @@ h3 {
 body {
     margin: 0 auto;
     max-width: 1200px;
-    border: black solid 1px;
     min-height: 100dvh;
     }
 
@@ -138,7 +150,7 @@ header {
   grid-template-columns: auto minmax(200px,1fr);
   gap: 1rem;
   width: 100%;
-  position: sticky;
+  position: relative;
   top:0;
   z-index: 100;
   padding: 1rem;
@@ -320,7 +332,7 @@ footer{
     padding:.5rem;
   }
   .some {
-    background-color: rgba(85, 182, 47, 0.05)
+    background-color: rgba(85, 182, 47, 0.05);
     padding:.5rem;
   }
 
