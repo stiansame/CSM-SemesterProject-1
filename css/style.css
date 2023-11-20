@@ -298,7 +298,8 @@ footer{
 
 .footer_content {
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   z-index: 2;
   grid-area: 2/1/3/2;
   gap:1rem;
@@ -315,10 +316,12 @@ footer{
   }
 
   .visit {
-    background-color: rgba(137, 43, 226, 0.432);
+    background-color: rgba(137, 43, 226, 0.05);
+    padding:.5rem;
   }
   .some {
-    background-color: #56b82f65;
+    background-color: rgba(85, 182, 47, 0.05)
+    padding:.5rem;
   }
 
 .fancy_bg {
@@ -414,6 +417,16 @@ footer{
     border-radius: 1rem;
   }
 
+/*--FOOTER--*/
+
+.footer_content {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  z-index: 2;
+  grid-area: 2/1/3/2;
+  gap:1rem;
+  padding: 1rem;
+  }
 
 
 }
