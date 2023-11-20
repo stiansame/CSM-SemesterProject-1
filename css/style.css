@@ -14,7 +14,7 @@ font-family: 'Roboto Condensed', sans-serif;*/
 }
 
 html {
-    font-size: 16px;
+    font-size: 14px;
     background-image: var(--bg);
     background-size: cover;
     color: rgb(0, 0, 0);
