@@ -216,7 +216,18 @@ nav a {
   display: block;
   text-transform: uppercase;
   font-size: clamp(1.8rem, 3vw, 2rem);
+}
 
+nav a:hover {
+  font-weight: bold;
+  color:rgb(8, 61, 82);
+  transition: all .15s ease;
+}
+
+.active,
+nav .nav-item:hover {
+  background-color: rgba(231, 29, 170, 0.25);
+  transition: all .4s ease;
 }
 
 .logo {
