@@ -108,17 +108,37 @@ html {
   }
 }
 
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
 body {
     margin: 0 auto;
     max-width: 1200px;
     border: black solid 1px;
+    }
+
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: sticky;
+  top:0;
+  z-index: 100;
+}
+
+.title{
+  align-self: center;
+  padding: 1rem;
 }
 
 nav,
 .footer_nav {
   font-family: "Bebas Neue", sans-serif;
-  border: blue solid 1px;
-}
+  }
+
+  .nav-item {
+    padding: .5rem;
+  }
 
 nav ul,
 nav li,
@@ -130,12 +150,23 @@ nav li,
   padding-left: 0;
 }
 
+.logo {
+  height: 100%;
+  padding:1rem 1rem 1rem 3rem;
+  
+  }
+
+.logo img {
+  max-height: 6rem;
+
+}
+
+
 footer{
   display:grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto, 1fr;
-  border: green solid 1px;
-}
+  }
 
 
 
@@ -163,10 +194,45 @@ footer{
 .footer_content {
   display:grid;
   grid-template-columns: repeat(3, 1fr);
-  border: red solid 1px;
   z-index: 2;
   grid-area: 2/1/3/2;
 }
 
 
 
+
+
+/*-------------------Responsive Scaling------------------------*/
+
+@media screen and (min-width: 900px) {
+
+
+  /*--NAVBAR--*/
+
+  nav {
+    justify-content: flex-end;
+    align-self: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+
+  header {
+    display:grid;
+    grid-template-columns: auto minmax(200px,1fr) auto;
+
+  }
+
+  .logo {
+    grid-area: 1/1/2/2;
+    height: fit-content;
+    
+  }
+  .logo img {
+    height:100px;
+  }
+}
