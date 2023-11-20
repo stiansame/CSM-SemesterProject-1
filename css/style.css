@@ -307,16 +307,21 @@ footer{
   /*--NAVBAR--*/
 
   nav {
+    all:unset;
     justify-content: flex-end;
     align-self: center;
+    grid-area: 1/2/2/4;
+    z-index: 100;
   }
 
   nav ul {
     display: flex;
     justify-content: right;
     align-items: center;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 1.6rem;
-  }
+    z-index: 2;
+   }
 
   header {
     display:grid;
@@ -331,5 +336,13 @@ footer{
   }
   .logo img {
     height:100px;
+  }
+
+  .title {
+    grid-area: 1/2/2/3;
+  }
+
+  .nav-toggle-label {
+    display: none;
   }
 }
