@@ -120,7 +120,8 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto minmax(200px,1fr);
+  width: 100%;
   position: sticky;
   top:0;
   z-index: 100;
@@ -140,7 +141,21 @@ nav,
   font-family: "Bebas Neue", sans-serif;
   }
 
-  .nav-item {
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left:0;
+  background: white;
+  border-bottom: rgb(231, 29, 171) solid 2px;
+  width: 100%;
+  z-index: 100;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-item {
     padding: .5rem;
   }
 
@@ -154,17 +169,62 @@ nav li,
   padding-left: 0;
 }
 
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px;
+  left: -9999px;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out 0.25s;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label i:last-child {
+  display: block;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label i:first-child {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: rgb(231, 29, 171);
+  filter: drop-shadow(0 0.5rem 0.5rem rgba(12, 100, 112, 0.726));
+}
+
+.nav-toggle-label i:last-child {
+  display: none;
+}
+
+.nav-toggle-label:hover {
+  transform: scale(1.3);
+  transition: scale 0.4s ease-in-out;
+}
+
 .logo {
   height: 100%;
-  padding:1rem 1rem 1rem 3rem;
+  padding:1rem 1rem 1rem 2rem;
   
   }
 
 .logo img {
   max-height: 6rem;
+  min-height: 3rem;
 
 }
-
 
 footer{
   display:grid;
