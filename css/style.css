@@ -1,3 +1,6 @@
+/*font-family: 'Amatic SC', sans-serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;*/
 
 *,
 *::after,
@@ -11,7 +14,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 14px;
     background-image: var(--bg);
     background-size: cover;
     color: rgb(0, 0, 0);
@@ -110,3 +113,42 @@ body {
     max-width: 1200px;
     border: black solid 1px;
 }
+
+footer{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+
+}
+
+.footer_bg {
+  --s: 6rem; /* control the size */
+  --c1: #b2b2b2;
+  --c2: #ffffff;
+  --c3: #d9d9d9;
+  
+  --_g: var(--c3) 0 120deg,#0000 0;
+  background:
+    conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),
+    conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),
+    conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),
+    conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
+    linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
+                          var(--c1) 0 calc(500%/6),var(--c2) 0);
+  background-size: calc(1.732*var(--s)) var(--s);
+  min-height: 20rem;
+  opacity: .1;
+  z-index: 1;
+  grid-area: 1/1/2/2;
+}
+
+.footer_content {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: red solid 1px;
+  z-index: 2;
+  grid-area: 1/1/2/2;
+}
+
+
+
