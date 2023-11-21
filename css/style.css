@@ -275,12 +275,20 @@ nav .nav-item:hover {
 }
 
 footer{
-  border: green solid 1px;
   display:grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto, 1fr;
   position: sticky;
   top:100%;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #ee4238;
+  }
+
+  footer a:hover{
+    font-weight: bold;
   }
 
   .footer_nav {
@@ -334,6 +342,10 @@ footer{
   .some {
     background-color: rgba(85, 182, 47, 0.05);
     padding:.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:1rem;
   }
 
 .fancy_bg {
@@ -373,6 +385,49 @@ footer{
     opacity: .05;
     z-index: 1;
     grid-area: 1/1/2/2;
+}
+
+.icon {
+  width: 5rem;
+  height: 5rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem; 
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+}
+
+.icon:hover {
+  border: white solid 3px;
+}
+
+.some a:active {
+  box-shadow: none;
+}
+
+#face{
+  background-color: #29539b;
+  background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+  border-radius: 44% 56% 83% 17% / 40% 58% 42% 60%; 
+  }
+
+#insta {
+  background-color: #f7accf;
+  background-image: linear-gradient(147deg, #f7accf 0%, #ff1053 74%);
+  border-radius:18% 82% 72% 28% / 40% 28% 72% 60%;
+}
+
+#snap {
+  background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+  border-radius: 12% 88% 19% 81% / 76% 50% 50% 24%;
+  }
+
+#youtube {
+  background-color: #990000;
+  background-image: linear-gradient(147deg, #990000 0%, #ff0000 74%);
+  border-radius:49% 51% 67% 33% / 78% 84% 16% 22%; 
 }
 
 
