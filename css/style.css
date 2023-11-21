@@ -454,10 +454,21 @@ footer{
 /*--HIGHLIGHTS--*/
 
 .highlights {
-  display: grid;
+/*   display: grid;
   width: 100%;
   grid-template-columns: repeat(4, auto);
-  justify-content:space-evenly;
+  justify-content:space-evenly; */
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap:1rem;
+
+  .highlights > * {
+    flex:1;
+  }
+
+
+
   
 }
 
@@ -549,6 +560,14 @@ footer{
 
 .event-container a:hover {
   color:rgb(231, 29, 171);
+}
+
+/*--EXHIBITIONS--*/
+
+.exhibitions {
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+
 }
 
 /*-------------------Responsive Scaling------------------------*/
