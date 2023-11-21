@@ -512,14 +512,19 @@ footer{
   display:grid;
   width:100%;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr) auto;
+  grid-template-rows: 1fr repeat(2, auto);
   }
 
 .img-holder {
   grid-area: 1/1/2/2;
-  background-image:url(../images/andrew-ruiz-348421.jpg);
-  background-size: cover;
-  z-index: 1;
+
+}
+
+.event-img {
+  min-width: 100%;
+  height:15rem;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .event-content {
@@ -636,13 +641,17 @@ footer{
   
   .img-holder {
     grid-area: 1/2/12/8;
-    background-image:url(../images/andrew-ruiz-348421.jpg);
-    background-size: cover;
-    height: 30rem;
     border-radius:9% 91% 77% 23% / 14% 52% 48% 86%;
     outline:rgb(231, 29, 171) solid 3px;
     z-index: 1;
-    
+    overflow: hidden;
+   }
+
+   .event-img {
+    min-width: 100%;
+    height:30rem;
+    object-fit: cover;
+    object-position: center center;
   }
   
   .event-content {
