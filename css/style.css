@@ -14,7 +14,7 @@ font-family: 'Roboto Condensed', sans-serif;*/
 }
 
 html {
-    font-size: 14px;
+    font-size: 16px;
     background-image: var(--bg);
     background-size: cover;
     color: rgb(0, 0, 0);
@@ -126,6 +126,11 @@ h1 {
   font-family: "Bebas Neue", sans-serif;
 }
 
+h2 {
+  font-family: "bebas neue", sans-serif;
+  font-size: 1.8rm;
+}
+
 h3 {
   font-family:'Amatic SC', sans-serif ;
   font-size: 1.8rem;
@@ -172,7 +177,7 @@ header {
 
 .title{
   font-family: "amatic sc", sans-serif;
-  font-size: clamp(1.8rem, 4vw, 3.5rem);
+  font-size: clamp(1.6rem, 4vw, 3.5rem);
   color: rgb(231, 29, 171);
   align-self: center;
   filter: drop-shadow(0 0.5rem 0.5rem rgba(12, 100, 112, 0.726));
