@@ -160,6 +160,7 @@ body {
 main {
   display:grid;
   grid-template-rows: 1fr repeat(3, auto);
+  gap:2rem;
 }
 
 
@@ -511,7 +512,7 @@ footer{
 
 .event-content {
   grid-area: 2/1/3/2;
-  padding: 2rem;
+  padding: 1rem;
   z-index: 2;
 }
 
