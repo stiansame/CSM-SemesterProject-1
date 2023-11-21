@@ -642,7 +642,7 @@ footer{
   .img-holder {
     grid-area: 1/2/12/8;
     border-radius:9% 91% 77% 23% / 14% 52% 48% 86%;
-    outline:rgb(231, 29, 171) solid 3px;
+    border:rgb(231, 29, 171) solid 3px;
     z-index: 1;
     overflow: hidden;
    }
@@ -652,6 +652,7 @@ footer{
     height:30rem;
     object-fit: cover;
     object-position: center center;
+    display: block;
   }
   
   .event-content {
