@@ -331,16 +331,18 @@ footer{
   }
   
   .contact {
-    background-color: rgba(0, 255, 255, 0.05);
     padding:.5rem;
   }
 
   .visit {
-    background-color: rgba(137, 43, 226, 0.05);
     padding:.5rem;
   }
+
+  .visit iframe {
+    border-radius: 1rem;
+  }
+  
   .some {
-    background-color: rgba(85, 182, 47, 0.05);
     padding:.5rem;
     display:flex;
     align-items: center;
@@ -395,15 +397,10 @@ footer{
   align-items: center;
   font-size: 2rem; 
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-
 }
 
 .icon:hover {
   border: white solid 3px;
-}
-
-.some a:active {
-  box-shadow: none;
 }
 
 #face{
