@@ -131,6 +131,11 @@ h3 {
   font-size: 1.8rem;
 }
 
+.btn {
+    font-family:'Amatic SC', sans-serif ;
+    font-size: 2rem;
+}
+
 .spacer{
   padding: 1rem 0rem;
 }
@@ -144,6 +149,10 @@ body {
     max-width: 1200px;
     min-height: 100dvh;
     }
+
+
+
+/*--HEADER / NAVBAR--*/
 
 header {
   display: grid;
@@ -274,6 +283,8 @@ nav .nav-item:hover {
 
 }
 
+/*-- FOOTER --*/
+
 footer{
   display:grid;
   grid-template-columns: 1fr;
@@ -341,7 +352,7 @@ footer{
   .visit iframe {
     border-radius: 1rem;
   }
-  
+
   .some {
     padding:.5rem;
     display:flex;
@@ -425,6 +436,55 @@ footer{
   background-color: #990000;
   background-image: linear-gradient(147deg, #990000 0%, #ff0000 74%);
   border-radius:49% 51% 67% 33% / 78% 84% 16% 22%; 
+}
+
+/*--MAIN--*/
+
+.highlights {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, auto);
+  justify-content:space-evenly;
+  
+}
+
+.highlight {
+  position:relative;
+  width:10rem;
+  height:10rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.highlight:hover {
+  border:white solid 3px;
+}
+
+.highlights a {
+  text-decoration: none;
+  color: white;
+}
+
+.one {
+  background-color: green;
+  border-radius: 84% 16% 39% 61% / 32% 46% 54% 68%;
+}
+
+.two {
+  background-color: fuchsia;
+  border-radius:26% 74% 77% 23% / 85% 78% 22% 15%;
+}
+
+.three {
+  background-color: steelblue;
+  border-radius: 32% 68% 24% 76% / 80% 65% 35% 20%;
+}
+
+.four {
+  background-color: orange;
+  border-radius: 86% 14% 76% 24% / 36% 64% 36% 64%;
 }
 
 
