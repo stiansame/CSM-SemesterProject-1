@@ -355,6 +355,18 @@ footer{
     border-radius: 1rem;
   }
 
+.author {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  gap:1rem;
+}
+
+.author p {
+  font-size: .8rem;
+}
+
   .some {
     display:flex;
     align-items: center;
