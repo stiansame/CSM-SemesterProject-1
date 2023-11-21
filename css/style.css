@@ -148,9 +148,13 @@ body {
     margin: 0 auto;
     max-width: 1200px;
     min-height: 100dvh;
-    padding: 1rem;
+    padding: 0 1rem;
     }
 
+main {
+  display:grid;
+  grid-template-rows: 1fr repeat(3, auto);
+}
 
 
 /*--HEADER / NAVBAR--*/
@@ -441,6 +445,8 @@ footer{
 
 /*--MAIN--*/
 
+/*--HIGHLIGHTS--*/
+
 .highlights {
   display: grid;
   width: 100%;
@@ -488,6 +494,34 @@ footer{
   border-radius: 86% 14% 76% 24% / 36% 64% 36% 64%;
 }
 
+
+/*--EVENTS--*/
+
+.event-container {
+  display:grid;
+  width:100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, auto);
+}
+
+.img-holder {
+  grid-area: 1/2/12/8;
+  background-image:url(../images/andrew-ruiz-348421.jpg);
+  background-size: cover;
+  height: 30rem;
+  border-radius:9% 91% 77% 23% / 14% 52% 48% 86%;
+  outline: white solid 3px;
+  
+}
+
+.event-content {
+  grid-area: 1/6/12/12;
+  align-self: center;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+
+}
 
 /*-------------------Responsive Scaling------------------------*/
 
