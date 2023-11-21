@@ -172,12 +172,12 @@ header {
   position: relative;
   top:0;
   z-index: 100;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .title{
   font-family: "amatic sc", sans-serif;
-  font-size: clamp(1.6rem, 4vw, 3.5rem);
+  font-size: clamp(1.5rem, 4vw, 3.5rem);
   color: rgb(231, 29, 171);
   align-self: center;
   filter: drop-shadow(0 0.5rem 0.5rem rgba(12, 100, 112, 0.726));
