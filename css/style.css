@@ -302,6 +302,7 @@ footer{
   grid-template-rows: auto, 1fr;
   position: sticky;
   top:100%;
+  margin-top: 2rem;
   }
 
   footer a {
@@ -479,6 +480,7 @@ footer{
   border:white solid 3px;
 }
 
+.exhibitions a,
 .event-container a,
 .highlights a {
   text-decoration: none;
@@ -515,7 +517,7 @@ footer{
   grid-template-rows: 1fr repeat(2, auto);
   }
 
-.img-holder {
+.ev-img {
   grid-area: 1/1/2/2;
 
 }
@@ -533,6 +535,7 @@ footer{
   z-index: 2;
 }
 
+.exhibitions h2,
 .event-content h2 {
   font-size: clamp(1.5rem, 2dvw, 1.8rem);
   text-decoration: underline;
@@ -540,7 +543,6 @@ footer{
 }
 
 .action {
-  grid-area: 3/1/4/2;
   z-index: 3;
   background-color: rgb(231, 29, 171);
   display: flex;
@@ -549,11 +551,16 @@ footer{
   border:rgb(231, 29, 171) solid 3px;
  }
 
+#eventbtn {
+  grid-area: 3/1/4/2; 
+}
+
 .action:hover{
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
+.exhibitions a:hover,
 .event-container a:hover {
   color:rgb(231, 29, 171);
 }
@@ -562,9 +569,56 @@ footer{
 
 .exhibitions {
   display:grid;
-  grid-template-columns: repeat(3,1fr);
-
+  grid-template-columns: repeat(3,auto);
+  grid-template-rows: repeat(3,auto);
+  gap:.5rem;
+  grid-template-areas:
+  "img1 text2 text2"
+  "img1 cta img2"
+  "text1 text1 img2"
+  ;
 }
+
+#a1 {
+grid-area: img1;
+}
+#a2{
+  grid-area: img2;
+}
+#a3{
+  grid-area: text2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding:.5rem;
+}
+#a4{
+  grid-area: text1;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: center;
+  height:100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding:.5rem;
+}
+#a5{
+  grid-area: 5cta;
+}
+
+.ex-img {
+  min-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+   
+}
+
+.exhib-content {
+  overflow: hidden;
+}
+
 
 /*-------------------Responsive Scaling------------------------*/
 
@@ -640,11 +694,14 @@ footer{
   }
   
   .img-holder {
-    grid-area: 1/2/12/8;
     border-radius:9% 91% 77% 23% / 14% 52% 48% 86%;
     border:rgb(231, 29, 171) solid 3px;
     z-index: 1;
     overflow: hidden;
+   }
+
+   .ev-img {
+    grid-area: 1/2/12/8;
    }
 
    .event-img {
@@ -666,14 +723,15 @@ footer{
   }
   
   .action {
-    grid-area: 8/6/10/8;
     z-index: 3;
     background-color: rgb(231, 29, 171);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 42% 58% 75% 25% / 72% 61% 39% 28% ;
     border:rgb(231, 29, 171) solid 3px;
    } 
-
+#eventbtn {
+  grid-area: 8/6/10/8;
+  border-radius: 42% 58% 75% 25% / 72% 61% 39% 28% ;
+}
 }
