@@ -10,6 +10,13 @@ font-family: 'Roboto Condensed', sans-serif;*/
 }
 :root {
     --bg:linear-gradient(80deg, rgba(5, 125, 172, 0.2), rgba(199, 10, 114, 0.1));
+    --col1:green;
+    --col2:fuchsia;
+    --col3:steelblue;
+    --col4:orange;
+    --col5:teal;
+
+
     
 }
 
@@ -189,6 +196,11 @@ nav,
 .footer_nav {
   font-family: "Bebas Neue", sans-serif;
   }
+
+
+nav h1 {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+}
 
 nav {
   position: absolute;
@@ -674,6 +686,84 @@ grid-area: img1;
   overflow: hidden;
 }
 
+.exhibitions_main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, auto);
+}
+
+.ex-img2 {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 1rem;
+  outline:solid 3px;
+}
+
+#e1 {
+  grid-area: 1/1/2/2;
+  padding: 1rem 0 .5rem 0;
+}
+#e2 {
+  grid-area: 3/1/4/1;
+  padding: 1rem 0 .5rem 0;
+}
+#e3 {
+  grid-area: 5/1/6/2;
+  padding: 1rem 0 .5rem 0;
+}
+#e4 {
+  grid-area: 7/1/8/2;
+  padding: 1rem 0 .5rem 0;
+}
+#e5 {
+  grid-area: 9/1/10/2;
+  padding: 1rem 0 .5rem 0;
+}
+#e6 {
+  grid-area: 2/1/3/2;
+  padding-bottom: 1rem;
+  border-bottom: black solid 2px;
+}
+#e7 {
+  grid-area: 4/1/5/2;
+  padding-bottom: 1rem;
+  border-bottom: black solid 2px;
+}
+#e8 {
+  grid-area: 6/1/7/2;
+  padding-bottom: 1rem;
+  border-bottom: black solid 2px;
+}
+#e9 {
+  grid-area: 8/1/9/2;
+  padding-bottom: 1rem;
+  border-bottom: black solid 2px;
+}
+#e10 {
+  grid-area: 10/1/11/2;
+}
+
+#e1 .ex-img2 {outline-color: var(--col1);}
+#e2 .ex-img2 {outline-color: var(--col2);}
+#e3 .ex-img2 {outline-color: var(--col3);}
+#e4 .ex-img2 {outline-color: var(--col4);}
+#e5 .ex-img2 {outline-color: var(--col5);}
+
+#e6 h2,
+#e7 h2,
+#e8 h2,
+#e9 h2,
+#e10 h2 {
+  text-decoration: underline;
+}
+
+#e6 h2{  text-decoration-color: var(--col1);}
+#e7 h2{  text-decoration-color: var(--col2);}
+#e8 h2{  text-decoration-color: var(--col3);}
+#e9 h2{  text-decoration-color: var(--col4);}
+#e10 h2{  text-decoration-color:var(--col5) }
 
 /*-------------------Responsive Scaling------------------------*/
 
