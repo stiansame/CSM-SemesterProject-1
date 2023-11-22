@@ -590,6 +590,7 @@ footer{
   height:15rem;
   object-fit: cover;
   object-position: center top;
+  display: block;
 }
 
 .event-content {
@@ -627,6 +628,42 @@ footer{
 .event-container a:hover {
   color:rgb(231, 29, 171);
 }
+
+.events{
+  display: grid;
+  gap:2rem;
+}
+
+.event-container2 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1rem 1fr 1rem;
+  grid-template-rows: 1fr 1rem 1rem 1rem auto auto;
+  color: white;
+}
+
+.event-container2 h2{
+  text-decoration: none;
+}
+
+.img-holder2{
+  border-radius: 90% 10% 90% 10% / 10% 90% 10% 90%;
+  overflow: hidden;
+  border:solid 3px;
+ }
+
+#ev-con1,
+#ev-con2,
+#ev-con3 {
+  border-radius: .5rem;
+}
+
+#ev-img1 {grid-area: 1/1/4/4;border-color: var(--col5);}
+#ev-con1 {grid-area: 2/2/7/3;background-color: var(--col5);}
+#ev-img2 {grid-area: 1/1/4/4;border-color: var(--col3);}
+#ev-con2 {grid-area: 2/2/7/3;background-color: var(--col3);}
+#ev-img3 {grid-area: 1/1/4/4;border-color: var(--col2);}
+#ev-con3 {grid-area: 2/2/7/3;background-color: var(--col2);}
 
 /*--EXHIBITIONS--*/
 
