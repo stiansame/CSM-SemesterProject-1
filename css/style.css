@@ -946,13 +946,13 @@ grid-area: img1;
 }
 
 #e1 {grid-area: 1/1/4/5;padding: 0;z-index:2;}
-#e2 {grid-area: 6/1/10/7;padding: 0;z-index:2;}
-#e3 {grid-area: 6/7/10/13;padding: 0;z-index:2;}
+#e2 {grid-area: 6/3/10/7;padding: 0;z-index:2;}
+#e3 {grid-area: 6/7/10/11;padding: 0;z-index:2;}
 #e4 {grid-area: 1/9/4/13;padding: 0;z-index:2;}
 #e5 {grid-area: 1/5/4/9;padding: 0;z-index:2;}
 #e6 {grid-area: 3/1/6/5;padding:1rem;border:none;background-color: var(--col1);}
-#e7 {grid-area: 9/1/13/7;padding:1rem;border:none;background-color: var(--col2);}
-#e8 {grid-area: 9/7/13/13;padding:1rem;border:none;background-color: var(--col3);}
+#e7 {grid-area: 9/3/13/7;padding:1rem;border:none;background-color: var(--col2);}
+#e8 {grid-area: 9/7/13/11;padding:1rem;border:none;background-color: var(--col3);}
 #e9 {grid-area: 3/9/6/13;padding:1rem;border:none;background-color: var(--col4);}
 #e10 {grid-area: 3/5/6/9;padding:1rem;border:none;background-color: var(--col5);}
 
