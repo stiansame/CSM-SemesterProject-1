@@ -913,6 +913,35 @@ footer a:hover {
   color: white;
 }
 
+.visit_us .visit-icon:nth-of-type(1),
+.visit_us .location {
+  background-color: var(--col1);
+}
+.visit_us .visit-icon:nth-of-type(3),
+.visit_us .admission {
+  background-color: var(--col2);
+}
+
+.visit_us .visit-icon:nth-of-type(5),
+.visit_us .hours {
+  background-color: var(--col3);
+}
+
+.visit_us .visit-icon:nth-of-type(7),
+.visit_us .accessibility {
+  background-color: var(--col4);
+}
+
+.visit_us .visit-icon:nth-of-type(9),
+.visit_us .food {
+  background-color: var(--col5);
+}
+
+.visit_us .visit-icon:nth-of-type(11),
+.visit_us .shop {
+  background-color: var(--col1);
+}
+
 .visit_us h1 {
   grid-area: 1/1/2/3;
   font-size: clamp(2rem, 5dvw, 3rem);
@@ -947,7 +976,6 @@ footer a:hover {
   grid-column-start: 2;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: var(--col5);
 }
 
 .location p {
