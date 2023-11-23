@@ -192,6 +192,11 @@ header {
   padding: 1rem 0;
 }
 
+.logo:hover {
+  filter: drop-shadow(0 0.5rem 0.5rem rgba(12, 100, 112, 0.726));
+  cursor: pointer;
+}
+
 .title {
   font-family: "amatic sc", sans-serif;
   font-size: clamp(1.7rem, 4vw, 3.5rem);
@@ -274,7 +279,11 @@ nav ul {
   align-items: center;
   font-size: 2rem;
   color: rgb(231, 29, 171);
+}
+
+.nav-toggle-label:hover {
   filter: drop-shadow(0 0.5rem 0.5rem rgba(12, 100, 112, 0.726));
+  cursor: pointer;
 }
 
 .nav-toggle-label i:last-child {
@@ -840,15 +849,11 @@ footer a:hover {
 
 .about {
   display: grid;
-}
-
-.statement {
-  display: grid;
+  justify-items: center;
   grid-template-rows: repeat(6 auto);
   gap: 1rem;
 }
 
-.statement_img {
   width: 100%;
   object-fit: cover;
   display: block;
@@ -869,16 +874,23 @@ footer a:hover {
   padding: 2rem;
 }
 
-.quote::after {
+.quote::before {
   content: open-quote;
   font-family: serif;
   font-weight: 900;
   font-size: 10rem;
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   position: absolute;
   z-index: -1;
   top: -1rem;
   left: 0;
+}
+
+.about h2 {
+  font-size: clamp(1.8rem, 6dvw, 3rem);
+}
+.about h3 {
+  font-size: clamp(1.8rem, 3dvw, 2.5rem);
 }
 
 /*-------------------Responsive Scaling------------------------*/
@@ -1007,6 +1019,44 @@ footer a:hover {
   #e9,
   #e10 {
     border-radius: 0 1rem 1rem 0;
+  }
+
+  /*--ABOUT--*/
+
+  .quote {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  /*--ABOUT--*/
+
+  .about {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, auto);
+    align-content: space-evenly;
+    position: relative;
+  }
+  .about h2 {
+    grid-area: 1/1/2/3;
+  }
+  .quote {
+    grid-area: 2/1/4/2;
+    max-width: 100%;
+    position: absolute;
+  }
+
+  #si1 {
+    grid-area: 7/1/8/3;
+  }
+  #si2 {
+    grid-area: 4/1/7/2;
+    min-height: 100%;
+    width: 100%;
+  }
+  .about p {
+    grid-column-start: 2;
+    font-size: clamp(1rem, 2dvw, 1.4rem);
   }
 }
 
