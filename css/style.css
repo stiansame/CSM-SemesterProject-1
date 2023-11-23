@@ -854,6 +854,7 @@ footer a:hover {
   gap: 1rem;
 }
 
+.about_img {
   width: 100%;
   object-fit: cover;
   display: block;
