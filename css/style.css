@@ -836,6 +836,34 @@ footer a:hover {
   padding: 1rem;
 }
 
+/*--ABOUT--*/
+
+.about {
+  display: grid;
+}
+
+.statement {
+  display: grid;
+  grid-template-rows: repeat(6 auto);
+  gap: 1rem;
+}
+
+.statement_img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  height: 15rem;
+}
+
+#si1 {
+  height: 100%;
+  grid-area: 3/1/4/2;
+}
+
+#si2 {
+  grid-area: 5/1/6/2;
+}
+
 /*-------------------Responsive Scaling------------------------*/
 
 @media screen and (min-width: 550px) {
