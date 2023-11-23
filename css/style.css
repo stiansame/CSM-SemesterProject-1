@@ -197,7 +197,6 @@ header {
   font-size: clamp(1.7rem, 4vw, 3.5rem);
   color: rgb(231, 29, 171);
   align-self: center;
-  filter: drop-shadow(0 0.5rem 0.5rem rgba(12, 100, 112, 0.726));
 }
 
 nav,
@@ -446,7 +445,6 @@ footer a:hover {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .icon:hover {
@@ -548,11 +546,11 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .highlight:hover {
   border: white solid 3px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .exhibitions a,
