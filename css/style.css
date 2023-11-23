@@ -860,6 +860,7 @@ footer a:hover {
 
 #si2 {
   grid-area: 5/1/6/2;
+  height: 15rem;
 }
 
 /*-------------------Responsive Scaling------------------------*/
