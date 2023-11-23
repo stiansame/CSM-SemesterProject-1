@@ -714,6 +714,11 @@ footer a:hover {
     "text1 text1 img2";
 }
 
+.exhibitions p,
+.exhibitions_main p {
+  padding-bottom: 0.5rem;
+}
+
 #a1 {
   grid-area: img1;
 }
@@ -727,7 +732,7 @@ footer a:hover {
   justify-content: center;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.3);
-  padding: 0.5rem;
+  padding: 1lh;
 }
 #a4 {
   grid-area: text1;
