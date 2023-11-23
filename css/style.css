@@ -852,11 +852,9 @@ footer a:hover {
   width: 100%;
   object-fit: cover;
   display: block;
-  height: 15rem;
 }
 
 #si1 {
-  height: 100%;
   grid-area: 3/1/4/2;
 }
 
