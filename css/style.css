@@ -1184,7 +1184,7 @@ footer a:hover {
   .visit_us img {
     object-fit: cover;
     object-position: center center;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     border-radius: 1rem;
   }
