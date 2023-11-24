@@ -590,8 +590,13 @@ footer a:hover {
 }
 
 .exhibitions a,
+/*-- EXHIBITIONS --*/
 .event-container a,
-.highlights a {
+/*-- EVENTS --*/
+.highlights a,
+/*-- HIGHLIGHTS --*/
+.involve a {
+  /*-- INVOLVE --*/
   text-decoration: none;
   color: white;
 }
@@ -1043,18 +1048,27 @@ footer a:hover {
   opacity: .4;
 }
 
-/*--EXPLORE--*/
+/*--EXPLORE  / GET INVOLVED--*/
 
-.explore {
+.explore,
+.involve {
   display: grid;
   gap: 2rem;
 }
 
-.explore h1 {
+.explore h1,
+.involve h1 {
   grid-area: 1/1/2/2;
   font-size: clamp(2rem, 5dvw, 3rem);
-  color: var(--col4);
   text-align: center;
+}
+
+.explore h1 {
+  color: var(--col4);
+}
+
+.involve h1 {
+  color: var(--col2)
 }
 
 .explore p {
@@ -1109,6 +1123,8 @@ footer a:hover {
 .researchers h2 {
   color: var(--col1);
 }
+
+
 
 /*-------------------Responsive Scaling------------------------*/
 
