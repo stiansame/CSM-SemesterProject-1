@@ -1002,8 +1002,11 @@ footer a:hover {
   border-radius: 1rem;
 }
 
-.visit_us img {
-  display: none;
+.visit-img {
+  height: 100%;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*-------------------Responsive Scaling------------------------*/
@@ -1181,23 +1184,9 @@ footer a:hover {
     grid-area: 1/1/2/5;
   }
 
-  .visit_us img {
-    object-fit: cover;
-    object-position: center center;
-    min-height: 100%;
-    max-width: 100%;
-    height: 20rem;
-    border-radius: 1rem;
-    overflow: hidden;
-  }
-
   #visit-img1 {
     grid-area: 2/4/5/5;
-    display: block;
-  }
-  #visit-img2 {
-    grid-area: 5/4/8/5;
-    display: block;
+    background-image: url(../images/luke-ellis-craven-400722.webp);
   }
 }
 /*----------------------------------RESPONSIVE------------------------*/
