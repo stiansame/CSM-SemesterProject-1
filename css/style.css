@@ -1188,6 +1188,10 @@ footer a:hover {
     grid-area: 2/4/5/5;
     background-image: url(../images/luke-ellis-craven-400722.webp);
   }
+  #visit-img2 {
+    grid-area: 5/4/8/5;
+    background-image: url(../images/library-1132573_1920.webp);
+  }
 }
 /*----------------------------------RESPONSIVE------------------------*/
 @media screen and (min-width: 850px) {
@@ -1501,10 +1505,10 @@ footer a:hover {
 
   #visit-img3 {
     grid-area: 2/6/4/7;
-    display: block;
+    background-image: url(../images/toa-heftiba-412579.jpg);
   }
   #visit-img4 {
     grid-area: 4/6/8/7;
-    display: block;
+    background-image: url(../images/roberto-nickson-396152.webp);
   }
 }
