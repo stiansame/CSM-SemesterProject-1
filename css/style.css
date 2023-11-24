@@ -1192,11 +1192,11 @@ footer a:hover {
 
   #visit-img1 {
     grid-area: 2/4/5/5;
-    display: block;
+    display: inline;
   }
   #visit-img2 {
     grid-area: 5/4/8/5;
-    display: block;
+    display: inline;
   }
 }
 /*----------------------------------RESPONSIVE------------------------*/
