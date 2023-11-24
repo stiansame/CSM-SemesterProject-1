@@ -1184,19 +1184,19 @@ footer a:hover {
   .visit_us img {
     object-fit: cover;
     object-position: center center;
-    min-height: 100%;
-    width: 100%;
+    height: 100%;
+    max-width: 100%;
     border-radius: 1rem;
     overflow: hidden;
   }
 
   #visit-img1 {
     grid-area: 2/4/5/5;
-    display: inline;
+    display: block;
   }
   #visit-img2 {
     grid-area: 5/4/8/5;
-    display: inline;
+    display: block;
   }
 }
 /*----------------------------------RESPONSIVE------------------------*/
