@@ -598,7 +598,8 @@ footer a:hover {
 .event-container a,
 .highlights a,
 .involve a,
-.contact_us a {
+.contact_us a,
+.donate a {
   text-decoration: none;
   color: white;
 }
@@ -1052,7 +1053,8 @@ footer a:hover {
 }
 
 .visit-img,
-.involved-img {
+.involved-img1,
+.involved-img2 {
   height: 100%;
   border-radius: 1rem;
   background-position: center;
@@ -1166,12 +1168,19 @@ footer a:hover {
   padding: .5rem;
 }
 
-/*--CONTACT--*/
-.contact_us {
+#donatebtn:hover,
+#contactbtn:hover {
+  border-radius: .5rem;
+}
+
+/*--CONTACT and DONATE--*/
+.contact_us,
+.donate {
   display: grid;
 }
 
-.contact-form {
+.contact-form,
+.donate-form {
   max-width: 650px;
   width: 100%;
   justify-self: center;
@@ -1181,8 +1190,14 @@ footer a:hover {
 
 }
 
-.contact-form form {
+.contact-form form,
+.donate-form form {
   display: grid;
+  gap: .5rem;
+}
+
+.donate-form form {
+  grid-template-columns: auto;
 }
 
 .contact-form form input,
@@ -1193,19 +1208,41 @@ footer a:hover {
   border: none;
 }
 
-form input:hover,
+.contact-form form input:hover,
 form textarea:hover {
   outline: var(--col5) solid 2px;
 }
 
-form input:active,
+.contact-form form input:active,
 form textarea:active,
-form input:focus,
+.contact-form form input:focus,
 form textarea:focus {
   outline: var(--col5) solid 2px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 
 }
+
+.donate-form input {
+  grid-area: 5/1/6/3;
+}
+
+.donate-form .action {
+  grid-area: 6/1/7/3;
+}
+
+.donate-form p {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.donate-form label {
+  grid-area: 4/1/5/3;
+}
+
+.donate-form output {
+  grid-area: 4/2/5/3;
+}
+
 
 .contact_us h1 {
   grid-area: 1/1/2/2;
@@ -1220,13 +1257,15 @@ form textarea:focus {
 }
 
 
-#sent {
+#sent,
+#donated {
   background-color: rgba(255, 255, 255, 0);
   display: grid;
   justify-items: center;
 }
 
-#sent h3 {
+#sent h3,
+#donated {
   color: var(--col2);
 }
 
@@ -1242,6 +1281,17 @@ form textarea:focus {
   right: -3rem;
 }
 
+#donated h2::before {
+  content: "\f4d6";
+  font-family: "font awesome 5 free";
+  font-weight: 900;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -3rem;
+}
 
 
 /*-------------------Responsive Scaling------------------------*/
@@ -1444,7 +1494,7 @@ form textarea:focus {
     grid-column-start: 2;
   }
 
-  .involved-img {
+  .involved-img1 {
     grid-area: 2/1/5/2;
     background-image: url(../images/reading-2762010_1280.webp);
   }
@@ -1958,5 +2008,10 @@ form textarea:focus {
     grid-column-start: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+  }
+
+  .involved-img2 {
+    grid-area: 2/3/5/4;
+    background-image: url(../images/Absolute_Reality_v16_cosmos_galaxy_space_stars_vivid_colors_ul_3.webp);
   }
 }

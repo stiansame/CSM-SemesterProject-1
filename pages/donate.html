@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Roboto+Condensed&display=swap" rel="stylesheet" />
 
-  <title>Donate | Community Science Museum</title>
+  <title>Contact us! | Community Science Museum</title>
 </head>
 <!--For animated background-->
 <section id="up"></section>
@@ -65,32 +65,55 @@
           <img src="../images/genoa-956405_1920.webp" />
         </figure>
       </div>
-      <section class="highlights">
-        <a href="../pages/visit.html">
-          <div class="highlight one">
-            <p class="btn">Visit us!</p>
-            <p class="icon-btn"><i class="fa-solid fa-landmark-flag"></i></p>
-          </div>
-        </a>
-        <a href="../pages/explore.html">
-          <div class="highlight two">
-            <p class="btn">Explore!</p>
-            <p class="icon-btn"><i class="fa-solid fa-microscope"></i></p>
-          </div>
-        </a>
-        <a href="../pages/contact.html">
-          <div class="highlight three">
-            <p class="btn">Contact us!</p>
-            <p class="icon-btn"><i class="fa-solid fa-paper-plane"></i></p>
-          </div>
-        </a>
-        <a href="../pages/getinvolved.html">
-          <div class="highlight four">
-            <p class="btn">Get involved!</p>
-            <p class="icon-btn"><i class="fa-solid fa-puzzle-piece"></i></p>
-          </div>
-        </a>
-      </section>
+    </section>
+    <section class="highlights">
+      <a href="../pages/visit.html">
+        <div class="highlight one">
+          <p class="btn">Visit us!</p>
+          <p class="icon-btn"><i class="fa-solid fa-landmark-flag"></i></p>
+        </div>
+      </a>
+      <a href="../pages/explore.html">
+        <div class="highlight two">
+          <p class="btn">Explore!</p>
+          <p class="icon-btn"><i class="fa-solid fa-microscope"></i></p>
+        </div>
+      </a>
+      <a href="../pages/contact.html">
+        <div class="highlight three">
+          <p class="btn">Contact us!</p>
+          <p class="icon-btn"><i class="fa-solid fa-paper-plane"></i></p>
+        </div>
+      </a>
+      <a href="../pages/getinvolved.html">
+        <div class="highlight four">
+          <p class="btn">Get involved!</p>
+          <p class="icon-btn"><i class="fa-solid fa-puzzle-piece"></i></p>
+        </div>
+      </a>
+    </section>
+    <section class="donate">
+      <h1>Make a donation!</h1>
+      <div class="donate-form">
+        <form action="message-sent.php" method="post">
+          <p>Donations to the community science museum are crucial for fostering curiosity, inspiring learning, and advancing scientific knowledge.</p>
+          <p> Your support ensures access to educational programs,
+            interactive
+            exhibits, and cutting-edge research, empowering future generations with the tools to explore and understand the wonders of the world.</p>
+          <p> Give the gift of discovery and help build a foundation
+            for
+            scientific literacy in our community.</p>
+          <label for="donation" class="form_label">
+            <h2>I would like to donate</h2>
+          </label>
+          <input type="range" name="price" id="price" min="1" max="1000" step="1" value="10" />
+          <a class="action" id="contactbtn" href="../pages/donation_success.html">
+            <div class="cta">
+              <p class="btn"> Donate <output class="price-output" for="price"></output>$</p>
+            </div>
+          </a>
+        </form>
+      </div>
     </section>
   </main>
   <footer>
@@ -115,7 +138,7 @@
           </div>
         </li>
         <li>
-          <div class="nav-item"><a href="pages/donate.html">Donate</a></div>
+          <div class="nav-item"><a href="../pages/donate.html">Donate</a></div>
         </li>
       </ul>
     </div>
@@ -179,6 +202,9 @@
     <div class="fancy_bg"></div>
   </footer>
   <a class="to-top" href="#"><i class="fa-solid fa-up-long" style="color: #ffffff"></i></a>
+
+  <!--Javascript here!-->
+  <script src="../js/donation.js"></script>
 </body>
 
 </html>
