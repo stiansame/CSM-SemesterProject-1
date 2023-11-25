@@ -1419,6 +1419,51 @@ footer a:hover {
   }
 }
 
+
+/*----------------------------------RESPONSIVE------------------------*/
+@media screen and (max-width: 720px) {
+  /*--HIGHLIGHTS--*/
+
+  .highlights {
+    display: inline-flex;
+    gap: 1rem;
+  }
+
+  .highlight {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 1rem;
+  }
+
+  .one,
+  .two,
+  .three,
+  .four {
+    border-radius: .5rem;
+  }
+
+  .one {
+    border: var(--col1) solid 3px;
+  }
+
+  .two {
+    border: var(--col2) solid 3px;
+  }
+
+  .three {
+    border: var(--col3) solid 3px;
+  }
+
+  .four {
+    border: var(--col4) solid 3px;
+  }
+
+}
+}
+
 /*----------------------------------RESPONSIVE------------------------*/
 @media screen and (min-width: 850px) {
   /*--NAVBAR--*/
