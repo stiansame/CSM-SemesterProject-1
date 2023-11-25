@@ -56,7 +56,7 @@ html {
   filter: blur(80px);
   animation: down 40s infinite;
   z-index: -1;
-  border: black solid 1px;
+
 }
 
 #down {
@@ -71,7 +71,7 @@ html {
   filter: blur(80px);
   animation: up 30s infinite;
   z-index: -1;
-  border: black solid 1px;
+
 }
 
 #left {
@@ -86,7 +86,7 @@ html {
   filter: blur(80px);
   animation: left 30s infinite;
   z-index: -1;
-  border: black solid 1px;
+
 }
 
 #right {
@@ -101,7 +101,7 @@ html {
   filter: blur(80px);
   animation: right 40s 0.5s infinite;
   z-index: -1;
-  border: black solid 1px;
+
 }
 
 @keyframes down {
@@ -592,7 +592,8 @@ footer a:hover {
 .exhibitions a,
 .event-container a,
 .highlights a,
-.involve a {
+.involve a,
+.contact a {
   text-decoration: none;
   color: white;
 }
@@ -1156,6 +1157,60 @@ footer a:hover {
   padding: .5rem;
 }
 
+/*--CONTACT--*/
+.contact {
+  display: grid;
+}
+
+.contact-form {
+  max-width: 650px;
+  width: 100%;
+  justify-self: center;
+
+}
+
+.contact-form form {
+  display: grid;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  padding: .5rem;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  border: none;
+}
+
+form input:hover,
+form textarea:hover {
+  outline: var(--col5) solid 2px;
+}
+
+form input:active,
+form textarea:active,
+form input:focus,
+form textarea:focus {
+  outline: var(--col5) solid 2px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+}
+
+.contact h1 {
+  grid-area: 1/1/2/2;
+  font-size: clamp(2rem, 5dvw, 3rem);
+  text-align: center;
+  color: var(--col3);
+}
+
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+
+
 /*-------------------Responsive Scaling------------------------*/
 
 @media screen and (min-width: 550px) {
@@ -1462,7 +1517,7 @@ footer a:hover {
   }
 
 }
-}
+
 
 /*----------------------------------RESPONSIVE------------------------*/
 @media screen and (min-width: 850px) {
