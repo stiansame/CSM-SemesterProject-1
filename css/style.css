@@ -1512,7 +1512,7 @@ form textarea:focus {
     gap: 1rem;
   }
 
-  .btn {
+  .highlights .btn {
     display: none;
   }
 
@@ -1627,7 +1627,7 @@ form textarea:focus {
 
   .img-holder {
     border-radius: 9% 91% 77% 23% / 14% 52% 48% 86%;
-    border: var(--col5) solid 3px;
+    border: white solid 5px;
     z-index: 1;
     overflow: hidden;
   }
@@ -1650,6 +1650,7 @@ form textarea:focus {
     background-color: var(--col5);
     border-radius: 1rem;
     color: white;
+    border: white solid 3px;
     padding: 4rem;
     z-index: 2;
   }
@@ -1666,6 +1667,13 @@ form textarea:focus {
   #eventbtn {
     grid-area: 8/6/10/8;
     border-radius: 42% 58% 75% 25% / 72% 61% 39% 28%;
+    border: white solid 3px;
+    transition: all .25s ease;
+  }
+
+  #eventbtn:hover {
+    border-radius: 50%;
+    filter: drop-shadow(0rem 0.0rem 1rem rgba(0, 0, 0, 0.8));
   }
 
   .event-container2 {
