@@ -606,25 +606,25 @@ footer a:hover {
 }
 
 .one {
-  background-color: green;
+  background-color: var(--col1);
   border-radius: 84% 16% 39% 61% / 32% 46% 54% 68%;
   transition: all .25s ease;
 }
 
 .two {
-  background-color: fuchsia;
+  background-color: var(--col2);
   border-radius: 26% 74% 77% 23% / 85% 78% 22% 15%;
   transition: all .25s ease;
 }
 
 .three {
-  background-color: steelblue;
+  background-color: var(--col3);
   border-radius: 32% 68% 24% 76% / 80% 65% 35% 20%;
   transition: all .25s ease;
 }
 
 .four {
-  background-color: orange;
+  background-color: var(--col4);
   border-radius: 86% 14% 76% 24% / 36% 64% 36% 64%;
   transition: all .25s ease;
 }
