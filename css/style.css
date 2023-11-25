@@ -902,14 +902,23 @@ footer a:hover {
 .about {
   display: grid;
   justify-items: center;
-  grid-template-rows: repeat(6 auto);
   gap: 1rem;
 }
 
-.about_img {
-  width: 100%;
+.about-img {
   object-fit: cover;
   display: block;
+  overflow: hidden;
+  height: 10rem;
+  width: 100%;
+}
+
+.about img {
+  height: 100%;
+  width: 100%;
+  object-position: center center;
+  display: block;
+  object-fit: cover;
 }
 
 #si1 {
@@ -918,7 +927,6 @@ footer a:hover {
 
 #si2 {
   grid-area: 5/1/6/2;
-  height: 15rem;
 }
 
 .quote {
