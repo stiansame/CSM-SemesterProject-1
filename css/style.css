@@ -1562,7 +1562,7 @@ form textarea:focus {
 
 
 /*----------------------------------RESPONSIVE------------------------*/
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 740px) {
   /*--HIGHLIGHTS--*/
 
   .highlights {
@@ -1977,9 +1977,11 @@ form textarea:focus {
     grid-template-columns: .25fr 1fr .25fr;
   }
 
-  .explore h1 {
+  .explore h1,
+  .involve h1 {
     grid-area: 1/1/2/4;
   }
+
 
   .kids,
   .teachers,
