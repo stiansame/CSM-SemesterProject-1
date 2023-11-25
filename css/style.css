@@ -1166,6 +1166,9 @@ footer a:hover {
   max-width: 650px;
   width: 100%;
   justify-self: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  border-radius: 1rem;
 
 }
 
@@ -1202,11 +1205,32 @@ form textarea:focus {
   color: var(--col3);
 }
 
-.contact-form {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 2rem;
-  border-radius: 1rem;
+.contact h2 {
+  color: var(--col3);
   position: relative;
+}
+
+
+#sent {
+  background-color: rgba(255, 255, 255, 0);
+  display: grid;
+  justify-items: center;
+}
+
+#sent h3 {
+  color: var(--col2);
+}
+
+#sent h2::before {
+  content: "\f135";
+  font-family: "font awesome 5 free";
+  font-weight: 900;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -3rem;
 }
 
 
