@@ -193,7 +193,6 @@ body {
 
 main {
   display: grid;
-  grid-template-rows: repeat(4, auto);
   gap: 2rem;
 }
 
@@ -584,7 +583,8 @@ footer a:hover {
   align-items: center;
 }
 
-.highlight:hover {
+.highlight:hover,
+.action:hover {
   border: white solid 3px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
@@ -593,7 +593,6 @@ footer a:hover {
 .event-container a,
 .highlights a,
 .involve a {
-
   text-decoration: none;
   color: white;
 }
@@ -656,27 +655,22 @@ footer a:hover {
 
 .action {
   z-index: 3;
-  background-color: rgb(231, 29, 171);
+  background-color: var(--col5);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: rgb(231, 29, 171) solid 3px;
+  border: var(--col5) solid 3px;
+  color: white;
+  border-radius: .3rem;
 }
+
+
 
 #eventbtn {
   grid-area: 3/1/4/2;
+  padding: .5rem;
 }
 
-.action:hover {
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
-
-.exhibitions a:hover,
-.event-container a:hover,
-.support a:hover {
-  color: rgb(231, 29, 171);
-}
 
 .events {
   display: grid;
@@ -998,7 +992,7 @@ footer a:hover {
 .visit_us h1 {
   grid-area: 1/1/2/3;
   font-size: clamp(2rem, 5dvw, 3rem);
-  color: var(--col3);
+  color: var(--col1);
   text-align: center;
 }
 
@@ -1039,7 +1033,8 @@ footer a:hover {
   border-radius: 1rem;
 }
 
-.visit-img {
+.visit-img,
+.involved-img {
   height: 100%;
   border-radius: 1rem;
   background-position: center;
@@ -1052,7 +1047,7 @@ footer a:hover {
 .explore,
 .involve {
   display: grid;
-  gap: 2rem;
+  row-gap: 2rem;
 }
 
 .explore h1,
@@ -1063,11 +1058,11 @@ footer a:hover {
 }
 
 .explore h1 {
-  color: var(--col4);
+  color: var(--col2);
 }
 
 .involve h1 {
-  color: var(--col2)
+  color: var(--col4)
 }
 
 .explore p,
@@ -1076,7 +1071,8 @@ footer a:hover {
   text-align: justify;
 }
 
-.explore-img {
+.explore-img,
+.involve-img {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
@@ -1084,7 +1080,12 @@ footer a:hover {
   justify-self: center;
 }
 
-.explore img {
+.involve-img {
+  display: none;
+}
+
+.explore img,
+.involve img {
   height: 100%;
   width: 100%;
   object-position: center top;
@@ -1094,17 +1095,22 @@ footer a:hover {
 
 .kids,
 .teachers,
-.researchers {
+.researchers,
+.support,
+.volunteer,
+.internship {
   display: grid;
   column-gap: 1rem;
   row-gap: .5rem;
 }
 
-.kids .explore-img {
+.kids .explore-img,
+.volunteer .involve-img {
   border: var(--col3) solid 3px;
 }
 
-.kids h2 {
+.kids h2,
+.volunteer h2 {
   color: var(--col3);
 }
 
@@ -1116,16 +1122,30 @@ footer a:hover {
   color: var(--col4);
 }
 
-.researchers .explore-img {
+.support .involve-img {
+  border: var(--col5) solid 3px;
+}
+
+.support h2 {
+  color: var(--col5);
+}
+
+.researchers .explore-img,
+.internship .involve-img {
   border: var(--col1) solid 3px;
 }
 
-.researchers h2 {
+.researchers h2,
+.internship h2 {
   color: var(--col1);
 }
 
+.cta p {
+  padding-bottom: 0;
+}
+
 #donatebtn {
-  align-content: center;
+  padding: .5rem;
 }
 
 /*-------------------Responsive Scaling------------------------*/
@@ -1311,6 +1331,28 @@ footer a:hover {
   .researchers .explore-content {
     grid-area: 2/2/3/3;
   }
+
+  /*--INVOLVE--*/
+  .involve {
+    grid-template-columns: .5fr 1fr;
+    column-gap: 1rem;
+  }
+
+  .involve h1 {
+    grid-area: 1/1/2/3;
+  }
+
+  .support,
+  .volunteer,
+  .internship {
+    grid-column-start: 2;
+  }
+
+  .involved-img {
+    grid-area: 2/1/5/2;
+    background-image: url(../images/reading-2762010_1280.webp);
+  }
+
 }
 
 /*----------------------------------RESPONSIVE------------------------*/
@@ -1440,7 +1482,7 @@ footer a:hover {
 
   .img-holder {
     border-radius: 9% 91% 77% 23% / 14% 52% 48% 86%;
-    border: rgb(231, 29, 171) solid 3px;
+    border: var(--col5) solid 3px;
     z-index: 1;
     overflow: hidden;
   }
@@ -1460,21 +1502,21 @@ footer a:hover {
   .event-content1 {
     grid-area: 1/6/12/12;
     align-self: center;
-    background-color: white;
+    background-color: var(--col5);
     border-radius: 1rem;
+    color: white;
     padding: 4rem;
-    outline: rgb(231, 29, 171) solid 3px;
     z-index: 2;
   }
 
-  .action {
+  /*   .action {
     z-index: 3;
     background-color: rgb(231, 29, 171);
     display: flex;
     align-items: center;
     justify-content: center;
     border: rgb(231, 29, 171) solid 3px;
-  }
+  } */
 
   #eventbtn {
     grid-area: 8/6/10/8;
@@ -1714,7 +1756,8 @@ footer a:hover {
   }
 
   /*--EXPLORE--*/
-  .explore {
+  .explore,
+  .involve {
     grid-template-columns: .25fr 1fr .25fr;
   }
 
@@ -1726,5 +1769,31 @@ footer a:hover {
   .teachers,
   .researchers {
     grid-column-start: 2;
+  }
+
+  .support,
+  .volunteer,
+  .internship {
+    grid-template-columns: 1fr .5fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .involve h2 {
+    grid-area: 1/1/2/3;
+  }
+
+  .involve img {
+    object-position: center center;
+  }
+
+  .involve-img {
+    border-radius: 1rem;
+    min-height: 100%;
+    min-width: 100%;
+    display: block;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 }
