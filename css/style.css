@@ -1244,7 +1244,8 @@ form textarea:focus {
 }
 
 
-.contact_us h1 {
+.contact_us h1,
+.donate h1 {
   grid-area: 1/1/2/2;
   font-size: clamp(2rem, 5dvw, 3rem);
   text-align: center;
@@ -1612,7 +1613,7 @@ form textarea:focus {
 
 
 /*----------------------------------RESPONSIVE------------------------*/
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 870px) {
   /*--NAVBAR--*/
 
   nav {
