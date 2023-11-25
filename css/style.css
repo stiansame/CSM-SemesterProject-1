@@ -160,7 +160,8 @@ h1 {
   font-family: "Bebas Neue", sans-serif;
 }
 
-h2 {
+h2,
+label {
   font-family: "bebas neue", sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
@@ -1177,6 +1178,10 @@ footer a:hover {
 .contact_us,
 .donate {
   display: grid;
+}
+
+label {
+  font-family: ;
 }
 
 .contact-form,
