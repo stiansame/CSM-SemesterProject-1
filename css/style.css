@@ -591,6 +591,7 @@ footer a:hover {
 .action:hover {
   border: white solid 3px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-radius: 50%;
 }
 
 .exhibitions a,
@@ -605,21 +606,25 @@ footer a:hover {
 .one {
   background-color: green;
   border-radius: 84% 16% 39% 61% / 32% 46% 54% 68%;
+  transition: all .25s ease;
 }
 
 .two {
   background-color: fuchsia;
   border-radius: 26% 74% 77% 23% / 85% 78% 22% 15%;
+  transition: all .25s ease;
 }
 
 .three {
   background-color: steelblue;
   border-radius: 32% 68% 24% 76% / 80% 65% 35% 20%;
+  transition: all .25s ease;
 }
 
 .four {
   background-color: orange;
   border-radius: 86% 14% 76% 24% / 36% 64% 36% 64%;
+  transition: all .25s ease;
 }
 
 /*--EVENTS--*/
@@ -1655,14 +1660,6 @@ form textarea:focus {
     z-index: 2;
   }
 
-  /*   .action {
-    z-index: 3;
-    background-color: rgb(231, 29, 171);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: rgb(231, 29, 171) solid 3px;
-  } */
 
   #eventbtn {
     grid-area: 8/6/10/8;
@@ -1753,15 +1750,27 @@ form textarea:focus {
 
   #a1 {
     grid-area: 1/1/5/4;
+    border: var(--col3) solid 3px;
   }
 
   #a2 {
     grid-area: 1/4/5/7;
+    border: var(--col2) solid 3px;
   }
 
   #exhib-btn {
     grid-area: 1/7/7/10;
     border-radius: 1rem;
+    height: 15rem;
+    width: 15rem;
+    justify-self: center;
+    align-self: center;
+    border-radius: 25% 75% 75% 25% / 49% 50% 50% 51%;
+    transition: all .25s ease;
+  }
+
+  #exhib-btn:hover {
+    border-radius: 50%;
   }
 
   #a3 {
@@ -1769,6 +1778,7 @@ form textarea:focus {
     justify-content: start;
     background-color: white;
     padding: 1rem;
+    border: var(--col3) solid 3px;
   }
 
   #a4 {
@@ -1777,6 +1787,7 @@ form textarea:focus {
     justify-content: start;
     background-color: white;
     padding: 1rem;
+    border: var(--col2) solid 3px;
   }
 
   .ex-img {
@@ -1787,7 +1798,6 @@ form textarea:focus {
 
   .exhib-content {
     border-radius: 1rem;
-    border: rgb(231, 29, 171) solid 3px;
   }
 
   .exhibitions_main {
