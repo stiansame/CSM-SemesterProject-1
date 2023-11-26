@@ -799,6 +799,11 @@ footer a:hover {
   height: 100%;
 }
 
+#eventbtn:hover,
+#exhib-btn:hover {
+  border-radius: .5rem;
+}
+
 .ex-img {
   min-height: 100%;
   max-width: 100%;
@@ -1818,7 +1823,7 @@ form textarea:focus {
     width: 15rem;
     justify-self: center;
     align-self: center;
-    border-radius: 25% 75% 75% 25% / 49% 50% 50% 51%;
+    border-radius: 25% 75% 75% 25% / 50% 50% 50% 50%;
     transition: all .25s ease;
   }
 
