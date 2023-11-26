@@ -401,6 +401,7 @@ footer a:hover {
 
 .visit iframe {
   border-radius: 1rem;
+  width: 100%;
 }
 
 .author {
@@ -421,6 +422,7 @@ footer a:hover {
   justify-content: space-evenly;
   gap: 1rem;
 }
+
 
 .fancy_bg {
   --s: 6rem;
