@@ -11,9 +11,9 @@ font-family: 'Roboto Condensed', sans-serif;*/
 
 :root {
   --bg: linear-gradient(80deg, rgba(5, 125, 172, 0.2), rgba(199, 10, 114, 0.1));
-  --col1: green;
-  --col2: #d100d1;
-  --col3: #427aa9;
+  --col1: #006600;
+  --col2: #9e009e;
+  --col3: #315b7d;
   --col4: #b74138;
   --col5: teal;
 }
