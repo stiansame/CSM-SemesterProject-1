@@ -986,6 +986,10 @@ footer a:hover {
   color: white;
 }
 
+.visit_us iframe {
+  width: 100%;
+}
+
 .visit_us .visit-icon:nth-of-type(1),
 .visit_us .location {
   background-color: var(--col1);
