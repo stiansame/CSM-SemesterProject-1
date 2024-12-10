@@ -1,4 +1,4 @@
-# NOROFF School assignment
+# NOROFF Semester Project 1
 
 ![image](https://github.com/stiansame/CSM-SemesterProject-1/blob/main/images/gitAsset/project2.jpg)
 
