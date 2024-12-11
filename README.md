@@ -2,17 +2,11 @@
 
 ![image](https://github.com/stiansame/CSM-SemesterProject-1/blob/main/images/gitAsset/project2.jpg)
 
-Design a video streaming website where you can purchase high-quality videos directly from the people who make them. The users of this website want to purchase videos right away, which will allow them to watch it online.
+Design a website for an interactive museum called the Cummunity Science museum.
 
-Link to brief: https://github.com/NoroffFEU/first-year-cross-course-assignment-brief-two
+## Brief
 
-## Description
-
-Iteration 3 of cross-course school assignment. This iteration includes Setting up REST-API calls to a headless(WP) CMS; of our own making.
-
--   REST API calls to user-defined headless CMS for fetching moviedetails and reviews
--   Custom JS for Shopping-cart and favourites
--   List item 3
+An interactive science museum called the Community Science Museum is opening in your town/city. Its core target audience is primary and middle school children (ages 7-15) and families with young children. The museum wants an informative, appealing website to attract middle school pupils and their parents. The site should appeal to youngsters without pandering; it should take for granted that the audience is curious and intelligent. The website should be informative and engaging, encouraging viewers to visit the museum. The website should be responsive and easy to use on various devices.
 
 ## Built With
 
@@ -24,7 +18,6 @@ Iteration 3 of cross-course school assignment. This iteration includes Setting u
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
 1. Clone the repo:
 
